@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings xmlns="http://xmlns.jcp.org/xml/ns/persistence/orm"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence/orm
+    http://xmlns.jcp.org/xml/ns/persistence/orm_2_1.xsd"
+    version="2.1">
+
+    <!-- Named native query for retrieving the menu list -->
+    <named-native-query name="Menu.getMenuList">
+        <query>
+            <![CDATA[
+                SELECT OH_ID AS menuId, OH_NAME AS menuName, OH_URL AS menuUrl 
+                FROM myw_ma_options_hdr
+            ]]>
+        </query>
+    </named-native-query>
+
+    <!-- Named native query for retrieving menu design -->
+    <named-native-query name="Menu.getMenuDesign">
+        <query>
+            <![CDATA[
+                SELECT OD_ID AS menuId, OD_STYLE AS style, OD_SCRIPT AS script, OD_BODY AS body, OD_PARAM AS param 
+                FROM myw_ma_options_dtl 
+                WHERE OD_ID = :id
+            ]]>
+        </query>
+    </named-native-query>
+
+</entity-mappings>

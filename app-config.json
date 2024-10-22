@@ -1,0 +1,9 @@
+{
+	"command": "java -jar myworld-0.0.1-SNAPSHOT.jar",
+	"build_path": "E:\\SB Workspace\\myworld\\myworld\\target",
+	"stack": "java17",
+	"env_variables": {},
+	"memory": 256,
+	"scripts": {},
+	"platform": "javase"
+}

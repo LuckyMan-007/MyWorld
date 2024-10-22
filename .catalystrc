@@ -1,0 +1,30 @@
+{
+  "defaults": {
+    "project": 1,
+    "env": 1
+  },
+  "actives": {
+    "project": 1,
+    "env": 1
+  },
+  "projects": [
+    {
+      "idx": 1,
+      "id": "26594000000024001",
+      "name": "MyProject",
+      "domain": {
+        "id": "10090184403",
+        "name": "myproject-867863085.development"
+      },
+      "timezone": "Asia/Kolkata",
+      "env": [
+        {
+          "idx": 1,
+          "id": "867863085",
+          "name": "Development",
+          "type": 3
+        }
+      ]
+    }
+  ]
+}
